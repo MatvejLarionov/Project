@@ -2,6 +2,24 @@
     font-family: RobotoFlex;
     src: url(./font/RobotoFlex[slnt\,wdth\,wght\,opsz].ttf);
 }
+
+
+
+
+
+.container
+{
+    max-width: 1440px;
+    font-family: RobotoFlex;
+    font-weight: 700;
+    color:#25468A;
+
+    background-color: #E9F5FF;
+
+    display: flex;
+    flex-direction: column;
+}
+
 .text
 {
     font-family: RobotoFlex;
@@ -9,11 +27,12 @@
     color:#25468A;
 }
 
+/*header*/
 .header
 {
     max-width: 1440px;
     height: 755px;
-    background: linear-gradient(0deg, rgba(255,255,255,1) 8%, rgba(0,185,255,1) 100%);
+    background: linear-gradient(0deg, #E9F5FF, rgba(0,185,255,1) 100%);
 
     display: flex;
     flex-direction: column;
@@ -102,7 +121,6 @@ body
 
 .logo_2__text_1
 {
-    font-family: RobotoFlex;
     font-size: 30px;
     font-weight: 400;
 }
@@ -126,4 +144,28 @@ body
 {
     width: 600;
     height: 560px;
+}
+
+
+
+/*nav*/
+
+.nav_2
+{
+    width: 1120px;
+    height: 190px;
+
+    align-self: center;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.button_nav
+{
+    width: 350px;
+    height: 190px;
+    background-color: #1391CE;
+    border-radius: 8px;
+    color:white;
 }
