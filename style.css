@@ -4,7 +4,17 @@
 }
 
 
+@keyframes button_animation 
+{
+    0%
+    {
 
+    }   
+    100%
+    {
+        transform: scale(1.2);
+    } 
+}
 
 
 .container
@@ -18,6 +28,20 @@
 
     display: flex;
     flex-direction: column;
+}
+
+
+.button_anim:hover
+{
+    animation: button_animation;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+.button_anim:hover:before
+{
+    animation: button_animation;
+    animation-duration: 0.5s;
+    animation-direction:reverse ;
 }
 
 .text
@@ -167,5 +191,6 @@ body
     height: 190px;
     background-color: #1391CE;
     border-radius: 8px;
+    border: none;
     color:white;
 }
