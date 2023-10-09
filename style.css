@@ -3,27 +3,14 @@
     src: url(./font/RobotoFlex[slnt\,wdth\,wght\,opsz].ttf);
 }
 
-
-@keyframes button_animation 
+body
 {
-    0%
-    {
-
-    }   
-    100%
-    {
-        transform: scale(1.2);
-    } 
+    padding: 0;
+    margin: 0;
 }
-
-
 .container
 {
     max-width: 1440px;
-    font-family: RobotoFlex;
-    font-weight: 700;
-    color:#25468A;
-
     background-color: #E9F5FF;
 
     display: flex;
@@ -33,17 +20,21 @@
 
 .button_anim:hover
 {
-    animation: button_animation;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-}
-.button_anim:hover:before
-{
-    animation: button_animation;
-    animation-duration: 0.5s;
-    animation-direction:reverse ;
+
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
+
+.button_anim
+{
+    transition: 0.5s;
+}
+.button_anim:active
+{
+    background-color: #3B4A6B;
+    color: wheat;
+}
 .text
 {
     font-family: RobotoFlex;
@@ -61,13 +52,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+
+    
+    font-family: RobotoFlex;
+    font-weight: 700;
+    color:#25468A;
 }
 
-body
-{
-    padding: 0;
-    margin: 0;
-}
 .nav
 {
     width: 1120px;
@@ -183,6 +174,7 @@ body
 
     display: flex;
     justify-content: space-between;
+
 }
 
 .button_nav
@@ -193,4 +185,115 @@ body
     border-radius: 8px;
     border: none;
     color:white;
+    font-size: 20px;
+}
+
+
+
+
+
+
+/*main*/
+
+
+@font-face {
+    font-family: inter;
+    src: url(./font/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+.main
+{
+    max-width: 1120px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+
+    font-family: inter;
+    font-size: 15px;
+    color: #1391CE;
+}
+
+.header_main
+{
+    width: 390px;
+    height: 110px;
+    align-self: center;
+    text-align: center;
+    font-weight: 300;
+}
+
+.rectangle
+{
+    Width: 160px;
+    Height:  8px;
+    background-color: #F7BA0E;
+    align-self: center;
+}
+
+
+.content
+{
+    width: 1120px;
+    display: flex;
+    flex-wrap:wrap  ;
+    min-height: 1550px;
+}
+
+.main_list
+{
+    max-width: 545px;
+    list-style-type:none;
+}
+
+.img_in_main
+{
+    width: 545px;
+    height: 410px;
+}
+
+.p_in_main_1
+{
+    font-weight:400;
+    font-size:16px;
+}
+
+.p_in_main_2
+{
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.p_in_main_3
+{
+    font-weight: 400;
+    font-size: 18px;
+    color: #4F4F4F;
+
+}
+
+.caption_in_main
+{
+    font-weight: 600;
+    font-size: 20px;
+}
+.list_in_main_list
+{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.list_in_main_list_2
+{
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.item
+{
+    font-weight: 400;
+    font-size: 15px;
+    list-style-image: url(./img/Vector.png);
 }
