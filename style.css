@@ -33,6 +33,7 @@ body
 .button_anim:active
 {
     background-color: #3B4A6B;
+    transition: 100ms;
     color: wheat;
 }
 .text
@@ -234,6 +235,8 @@ body
 .content
 {
     width: 1120px;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-wrap:wrap  ;
     min-height: 1550px;
@@ -296,4 +299,57 @@ body
     font-weight: 400;
     font-size: 15px;
     list-style-image: url(./img/Vector.png);
+}
+
+
+/*aside*/
+
+.aside
+{
+    width: 1120px;
+    display: flex;
+    align-self: center;
+
+
+    justify-content: space-between;
+
+
+    font-family: RobotoFlex;
+    color:#1391CE;
+}
+.p_in_aside
+{
+    font-family: inter;
+    font-size: 35px;
+    font-weight: 300;
+}
+.section
+{
+    max-width: 480px;
+}
+
+
+/*footer*/
+
+.footer
+{
+    max-width: 1440px;
+    min-height: 145px;
+    background-color:#1391CE;
+    font-family: inter;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.container_footer
+{
+    max-width: 1400px;
+    margin  : 50px 50px;
+    display: flex;
+    justify-content: space-between;
+    border-top:1px solid white;
+}
+.white
+{
+    color:white
 }
