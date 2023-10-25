@@ -10,6 +10,7 @@ body
 }
 .container
 {
+    margin: 0 auto;
     max-width: 1440px;
     background-color: #E9F5FF;
 
